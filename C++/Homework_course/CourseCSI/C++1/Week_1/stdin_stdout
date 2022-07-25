@@ -1,0 +1,14 @@
+
+
+#include <iostream>
+
+int main() {
+    int count = 0, firstNumber = 0, secondNumber = 0;
+
+    std::cin >> count;
+    for(int i = 0; i<count; ++i){
+        std::cin >> firstNumber >> secondNumber;
+        std::cout << firstNumber + secondNumber << std::endl;
+    }
+    return 0;
+}
