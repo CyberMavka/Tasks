@@ -1,0 +1,21 @@
+int main() {
+    int count = 0, inputNumber = 0, sumPower = 0;
+
+    std::cin >> count;
+    for(int i = 0; i<count; ++i){
+        std::cin >> inputNumber;
+        int POWER = 0;
+        do {
+            sumPower = power(2, POWER);
+          POWER++;
+        } while (sumPower <= inputNumber);
+        POWER = POWER - 2;
+
+        if(POWER == -1){
+            POWER = 0;
+        }
+        std::cout << POWER << std::endl;
+    }
+
+    return 0;
+}
